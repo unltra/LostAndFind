@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    
+    <Class name="top.unltra.lost.dao.PickDao" x="780" y="149">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    
+    <Class name="top.unltra.lost.service.impl.LostServiceImpl" x="314" y="127">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        
+        <Association destinationClassName="top.unltra.lost.dao.PickDao"
+            endpointName="pickDao" kind="Simple"/>
+        <Association destinationClassName="top.unltra.lost.dao.AdminDao"
+            endpointName="adminDao" kind="Simple"/>
+        <Association destinationClassName="top.unltra.lost.dao.UserDao"
+            endpointName="adminDao" kind="Simple"/>
+        <Association destinationClassName="top.unltra.lost.dao.KindDao"
+            endpointName="adminDao" kind="Simple"/>
+        
+        <Communication destinationClassName="top.unltra.lost.dao.PickDao"/>
+        <Communication destinationClassName="top.unltra.lost.dao.AdminDao"/>
+        <Communication destinationClassName="top.unltra.lost.dao.UserDao"/>
+        <Communication destinationClassName="top.unltra.lost.dao.KindDao"/>
+    </Class>
+    
+    <Class name="top.unltra.lost.dao.AdminDao" x="111" y="149">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="top.unltra.lost.dao.UserDao" x="206" y="186">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="top.unltra.lost.dao.KindDao" x="306" y="286">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+
+</ClassDiagram>
