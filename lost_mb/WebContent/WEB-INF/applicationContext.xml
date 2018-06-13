@@ -27,7 +27,10 @@
 	<context:property-override location="classpath:db.properties"/>
 
 	<!-- 配置c3p0数据源 -->
-	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"/>
+	<!-- <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"/> -->
+	
+	<!-- 配置druid数据源 -->
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" />
 	
 	<!-- 配置SqlSessionFactory，org.mybatis.spring.SqlSessionFactoryBean是Mybatis社区开发用于整合Spring的bean -->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
