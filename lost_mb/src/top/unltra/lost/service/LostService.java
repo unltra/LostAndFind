@@ -18,53 +18,18 @@ public interface LostService {
 
 	// Admin
 
-	/**
-	 * 用户登录
-	 * 
-	 * @param aname
-	 * @param apw
-	 * @return Admin对象
-	 */
 	Admin login(String aname, String apw);
 
-	/**
-	 * 根据aid查询用户
-	 * 
-	 * @param aid
-	 * @return 用户对象
-	 */
 	Admin findAdminByAid(Integer aid);
 
-	/**
-	 * 获得所有用户
-	 * 
-	 * @return Admin对象的List集合
-	 */
 	List<Admin> findAllAdmin();
 	
 	List<Admin> findAdmin(Admin admin, PageModel pageModel);
-
-	/**
-	 * 根据aid删除admin
-	 * 
-	 * @param aid
-	 */
+	
 	void removeAdminByAid(Integer aid);
 
-	/**
-	 * 修改用户
-	 * 
-	 * @param Admin
-	 *            用户对象
-	 */
 	void modifyAdmin(Admin admin);
 
-	/**
-	 * 添加用户
-	 * 
-	 * @param Admin
-	 *            用户对象
-	 */
 	void addAdmin(Admin admin);
 
 	// User
@@ -130,8 +95,5 @@ public interface LostService {
 
 	List<Notice> findNoticeByUser(Integer uid);
 
-	
-
-	
 
 }
