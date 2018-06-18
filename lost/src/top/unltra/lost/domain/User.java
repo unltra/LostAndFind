@@ -25,7 +25,7 @@ public class User implements Serializable {
 	private String uqq;
 	private String umail;
 	private String uaddress;
-	private java.util.Date ucreatetime;
+	private Date ucreatetime;
 	
 	public User() {
 		super();
@@ -86,10 +86,10 @@ public class User implements Serializable {
 	public void setUaddress(String uaddress) {
 		this.uaddress = uaddress;
 	}
-	public java.util.Date getUcreatetime() {
+	public Date getUcreatetime() {
 		return ucreatetime;
 	}
-	public void setUcreatetime(java.util.Date ucreatetime) {
+	public void setUcreatetime(Date ucreatetime) {
 		this.ucreatetime = ucreatetime;
 	}
 

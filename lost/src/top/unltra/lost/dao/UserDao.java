@@ -21,7 +21,7 @@ public interface UserDao {
 			// 根据登录名和密码查询user
 			@Select("select * from "+USERTABLE+" where uname = #{uname} and upw = #{upw}")
 			User selectByUnameAndUpw(@Param("uname") String uname,
-					@Param("upw") String upw);
+                                     @Param("upw") String upw);
 			
 			@Select("select * from "+USERTABLE+" ")
 			List<User> selectAllUser();

@@ -98,11 +98,11 @@ public class Admin implements Serializable {
 		this.amail = amail;
 	}
 
-	public java.util.Date getAcreatetime() {
+	public Date getAcreatetime() {
 		return acreatetime;
 	}
 
-	public void setAcreatetime(java.util.Date acreatetime) {
+	public void setAcreatetime(Date acreatetime) {
 		this.acreatetime = acreatetime;
 	}
 

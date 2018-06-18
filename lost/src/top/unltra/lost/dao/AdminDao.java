@@ -18,8 +18,8 @@ public interface AdminDao {
 	// 根据登录名和密码查询admin
 		@Select("select * from "+ADMINTABLE+" where aname = #{aname} and apw = #{apw}")
 		Admin selectByAnameAndApw(
-				@Param("aname") String aname,
-				@Param("apw") String apw);
+                @Param("aname") String aname,
+                @Param("apw") String apw);
 		
 		@Select("select * from "+ADMINTABLE+" ")
 		List<Admin> selectAllAdmin();

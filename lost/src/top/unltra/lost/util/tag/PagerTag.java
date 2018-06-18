@@ -1,4 +1,4 @@
-﻿package top.unltra.lost.util.tag;
+package top.unltra.lost.util.tag;
 
 import java.io.IOException;
 
