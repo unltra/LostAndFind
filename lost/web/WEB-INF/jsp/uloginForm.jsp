@@ -11,7 +11,7 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="${ctx }/layuicms/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="${ctx }/layui/css/layui.css" media="all" />
 	<link rel="stylesheet" href="${ctx }/login/login.css" media="all" />
 	<script type="text/javascript">
 	$(function() {
@@ -68,7 +68,7 @@
 			<div align="right"><a href="${ctx }/register"><i style="color:white; fontsize:5">没有账户</i></a></div>
 		</form>
 	</div>
-	<script type="text/javascript" src="${ctx }/layuicms/layui/layui.js"></script>
+	<script type="text/javascript" src="${ctx }/layui/layui.js"></script>
 	<script type="text/javascript" src="${ctx }/login/login.js"></script>
 </body>
 </html>

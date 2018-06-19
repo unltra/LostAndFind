@@ -20,7 +20,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
@@ -31,9 +30,8 @@ public class ShowController {
 	@Autowired
 	@Qualifier("lostService")
 	private LostService lostService;
-			
-	
-	
+
+
 	@RequestMapping(value="/showPick")
 	 public String selectPick(Integer pageIndex,
 			 Integer kid,Integer aid,
@@ -193,55 +191,6 @@ public class ShowController {
 			return "uright";
 		}
 	}
-	
-	/*@RequestMapping(value="/MyNotice")
-	 public String selectNotice(
-			 Integer kid,Integer aid,Integer uid,
-			 @ModelAttribute Notice notice,
-			 Model model){
-		// 模糊查询时判断是否有关联对象传递，如果有，创建并封装关联对象
-		this.noticeBind(aid, uid, kid, notice);
-		// 查询admin信息，用于模糊查询
-		List<Admin> admins = lostService.findAllAdmin();
-		// 查询user信息，用于模糊查询
-		List<User> users = lostService.findAllUser();
-		// 查询kind信息 ，用于模糊查询
-		List<Kind> kinds = lostService.findAllKind();
-		// 查询员工信息    
-		List<Notice> notices = lostService.findAllNotice(notice);
-		// 设置Model数据
-		model.addAttribute("notices", notices);
-		model.addAttribute("kinds", kinds);
-		model.addAttribute("admins", admins);
-		model.addAttribute("users", users);
-		
-		// 返回notice页面
-		return "man/myNotice";
-		
-	}*/
-	
-	/*@RequestMapping(value="MyNotice")
-	 public String myNotice(
-			 HttpSession session,
-			 @ModelAttribute Notice notice,
-			 Model model){
-		User u =(User) session.getAttribute(LostConstants.USER_SESSION);
-		if(u!=null) {
-			Integer uid=u.getUid();
-			
-			User user = lostService.findUserByUid(uid);
-			List<Kind> kinds = lostService.findAllKind();
-			List<Notice> notices =lostService.findNoticeByUser(uid);
-			model.addAttribute("notices", notices);
-			model.addAttribute("kinds", kinds);
-			model.addAttribute("user", user);
-			// 返回
-			return "man/myNotice";
-		}
-		else {
-			return "uright";
-		}
-	}*/
 	
 	@RequestMapping(value="MyNotice")
 	 public String myN(
