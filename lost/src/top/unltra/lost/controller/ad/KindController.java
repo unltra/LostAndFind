@@ -1,4 +1,4 @@
-package top.unltra.lost.controller;
+package top.unltra.lost.controller.ad;
 
 import java.util.List;
 
