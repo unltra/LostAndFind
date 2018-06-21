@@ -21,4 +21,4 @@
 
 3.Mapper注解->XML
 
-4.Maven管理
+4.Maven管理，把原来的maven市场找不到的jar重新找下导入尝试jarToPom
