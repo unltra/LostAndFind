@@ -12,7 +12,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="stylesheet" href="${ctx }/layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="${ctx }/login/login.css" media="all" />
+	<link rel="stylesheet" href="${ctx }/css/login.css" media="all" />
 	<script type="text/javascript">
 	$(function() {
 		/** 按了回车键 */
@@ -49,7 +49,7 @@
 </head>
 <body>
 	<video class="video-player" preload="auto" autoplay="autoplay" loop="loop" data-height="1080" data-width="1920" height="1080" width="1920">
-	    <source src="${ctx }/login/login.mp4" type="video/mp4">
+	    <source src="${ctx }/images/login.mp4" type="video/mp4">
 	   
 	</video>
 	<div class="video_mask"></div>
@@ -69,6 +69,6 @@
 		</form>
 	</div>
 	<script type="text/javascript" src="${ctx }/layui/layui.js"></script>
-	<script type="text/javascript" src="${ctx }/login/login.js"></script>
+	<script type="text/javascript" src="${ctx }/js/login.js"></script>
 </body>
 </html>

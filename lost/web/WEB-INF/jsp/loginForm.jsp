@@ -1,15 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<title>NITlost</title>
-<link href="${ctx}/log/css/style.css" rel='stylesheet' type='text/css' />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords"
-	content="App Loction Form,Login Forms,Sign up Forms,Registration Forms,News latter Forms,Elements" />
-<script type="text/javascript">
+	<meta charset="utf-8">
+	<title>用户登录</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="${ctx }/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="${ctx }/css/login.css" media="all" />
+	<script type="text/javascript">
 	$(function() {
 		/** 按了回车键 */
 		$(document).keydown(function(event) {
@@ -41,54 +45,30 @@
 		})
 
 	})
-</script>
-<!--webfonts-->
-<link
-	href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700,800'
-	rel='stylesheet' type='text/css'>
-<!--//webfonts-->
+	</script>
 </head>
 <body>
-	<h1>NITLost ManageMent Sys</h1>
-	<div class="app-location">
-		<h2>Welcome to Lost</h2>
-		<div class="line">
-			<span></span>
-		</div>
-		<div class="location">
-			<img src="${ctx}/log/images/location.png" class="img-responsive" alt="" />
-		</div>
-		<form action="login.do" method="post" id="loginForm">
-			<input type="text" class="text" value="${aname }" id="aname" name="aname" placeholder="管理员账号"
-				onfocus="this.value = '';"
-				onblur="if (this.value == '') {this.value = 'admin account';}">
-			<input type="password" value="${apw }" id="apw" name="apw" placeholder="管理员密码"
-				onfocus="this.value = '';"
-				onblur="if (this.value == '') {this.value = 'Password';}">
-			<div class="submit">
-				<input type="submit" id="login-submit" value="Sign in">
-			</div>
-			<div class="clear"></div>
-			<div class="new">
-				<h3>
-					<a href="#">Forgot password ?</a>
-				</h3>
-				<h4>
-					<a href="#">New here ? Sign Up</a>
-				</h4>
-				<div class="clear"></div>
-			</div>
+	<video class="video-player" preload="auto" autoplay="autoplay" loop="loop" data-height="1080" data-width="1920" height="1080" width="1920">
+	    <source src="${ctx }/images/login.mp4" type="video/mp4">
+	   
+	</video>
+	<div class="video_mask"></div>
+	<div class="login">
+	    <h1>用户登录</h1>
+	    <form class="layui-form" action="login.do" method="post" id="loginForm">
+	    	<div class="layui-form-item">
+				<input class="layui-input" value="${aname }" id="aname" name="aname"  placeholder="账户" lay-verify="required" type="text" autocomplete="off">
+		    </div>
+		    <div class="layui-form-item">
+				<input class="layui-input" value="${apw }" id="apw" name="apw" placeholder="密码" lay-verify="required" type="password" autocomplete="off">
+		    </div>
+		    
+			<button class="layui-btn login_btn" lay-submit="" id="login-submit" lay-filter="login">登录</button>
+			<div style="height: 40px;"></div>
+			<div align="right"><a href="${ctx }/register"><i style="color:white; fontsize:5">没有账户</i></a></div>
 		</form>
 	</div>
-	<!--start-copyright-->
-	<div class="copy-right">
-		<p>
-			Copyright &copy; 2017 All rights Reserved | Template by &nbsp;<a
-				href="http://www.unltra.top">unltrs.top.</a>
-		</p>
-	</div>
-	<!--//end-copyright-->
+	<script type="text/javascript" src="${ctx }/layui/layui.js"></script>
+	<script type="text/javascript" src="${ctx }/js/login.js"></script>
 </body>
 </html>
-
-

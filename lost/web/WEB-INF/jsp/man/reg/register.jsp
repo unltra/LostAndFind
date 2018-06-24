@@ -21,8 +21,6 @@
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="${ctx }/js/check.js"></script>
 <style type="text/css">
-	@charset "utf-8";
-	/* track base Css */
 .container {
 	margin-top:15px;
 }
