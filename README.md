@@ -19,6 +19,6 @@
 
 2.后端框架迁移到Spring Boot+权限控制shiro/Spring Security+缓存Ehcache,Redis
 
-3.Mapper注解->XML
+3.Mapper注解->XML配置
 
 4.Maven管理，把原来的maven市场找不到的jar重新找下导入尝试jarToPom
